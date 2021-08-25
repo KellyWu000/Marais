@@ -61,8 +61,9 @@ function createProductCardElement(product) {
                   </div>
                     <div class="form-group d-flex  align-items-center  ">
                        
-                         <span class=" font-weight-bold txt-color  p-2  rounded-circle icon-hover mr-2  "> <i class="far fa-heart "></i> </span>
-                        <span class=" font-weight-bold txt-color  p-2  rounded-circle icon-hover "><i class="fas fa-shopping-cart  "></i> </span>
+                         <a  href="#" class=" font-weight-bold txt-color  rounded-circle icon-hover mr-2 lh-1 "> 
+                         <i class="far fa-heart "></i> </a>
+                        <a  href="#"  class=" font-weight-bold txt-color rounded-circle icon-hover lh-1"><i class="fas fa-shopping-cart  "></i> </a>
                   </div>
  
             
