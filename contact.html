@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/4971a91f41.js"
+      crossorigin="anonymous"
+    ></script>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <style>
+
+      .pb150{
+          padding-bottom: 150px;
+      }
+      .pt150{
+       padding-top: 150px;
+      }
+      .mt150{
+          margin-top: 150px;
+      }
+
+      /* shop */
+   .shop-style{
+     padding-top: 100px;
+
+}
+.shop-body p{
+  margin-bottom: 50px;
+  padding: 6px;
+  color: #af8057;
+  line-height: 1.5;
+  font-size: 18px;
+  
+}
+.shop-txt{
+  font-size: 18px;
+  transform: translateY(30px);
+  padding: 6px;
+  /* 用flex column後 使用margintop會影響其他的 所以使用translateY */
+}
+.rec-slogan h3{
+    text-align: center;
+    color: #af8057;
+  line-height: 1.5;
+
+}
+
+.shopwrap{
+  position: relative;
+  overflow: hidden;
+
+}
+
+.address{
+position: absolute;
+/* top: 50%;
+left: 50%;
+transform: translate(-50%,-50%); */
+top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+/* display: none; */
+/* width: 500px; */
+transform: translateY(100%);
+    transition: transform .7s;
+  background: linear-gradient(rgba(102, 101, 101, 0.699), #5e5c5975);
+}
+.address a{
+  text-align: center;
+  height: 380px;
+    line-height: 380px;
+
+/* display: block; */
+position: absolute;
+top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+/* height: 340px;
+    line-height: 340px; */
+ color: white;
+ font-size: 26px;
+ font-weight: 700;
+
+}
+.shopwrap:hover .address {
+  display: block;
+  transform: translateY(0%);
+}
+   .shop-img img{
+       background-color: #b19277;
+       padding: 20px;
+       border-radius: 3px;
+       height: 380px;
+       object-fit: cover;
+       cursor: pointer;
+     
+      
+   }
+
+
+
+
+   .res-banner img{
+height: 600px;
+object-fit: cover;
+   }
+
+.cook-img img{
+    height: 225px;
+    max-width: 100%;
+}
+
+.line-style{
+    width: 97%;
+    border-bottom: 2px solid rgb(105, 69, 53);
+    position: relative;
+
+   }
+.rec-title{
+    position: absolute;
+    font-size: 35px;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    padding: 0px 17px;
+   
+}
+
+
+   .res-title {
+    position: absolute;
+    font-size: 35px;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    padding: 0px 17px;
+      
+   }
+.res a{
+    display: block;
+    width: 140px;
+    padding: 8px;
+   border: 2px solid #af8057;
+    color: #af8057;
+    border-radius: 5px;
+    margin: 50px auto;
+text-align: center;
+font-weight: 700;
+font-size: 26px;
+/* text-decoration: none; */
+cursor: pointer;
+}
+  
+   
+
+   .res-txt h3{
+       line-height: 1.5;
+       color: #af8057;
+   }
+   @media screen and (max-width: 768px) {
+    .shop-title{
+     padding-top: 30px;
+   }
+
+
+   .shop-img{
+     position: relative;
+   }
+   .shop-img img{ 
+
+  object-position: 45% 50%;
+   }
+
+
+  
+   .shop-body p{
+       font-size: 16px;
+   }
+   .res-title{
+       font-size: 30px;
+       top: -20px;
+   }
+.res-banner img{
+height: 400px;
+object-fit: cover;
+
+
+   }
+
+   .cook-img img{
+    max-width: 100%;
+    height: 145px;
+}
+
+   .res-txt h3{
+     font-size: 22px;
+   }
+   .rec-slogan h3{
+     font-size: 22px;
+   }
+   }
+  </style>
+ </head>
+
+<body>  
+    <nav class="navbar navbar-expand-lg navbar-light bk-color txt-color position-fixed  p-0 ">
+        <a class="navbar-brand pl-1" href="index.html"><img  class="rounded-2" src="images/MARIS (1).png" width=45 height=45 alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse text-center  " id="navbarToggler">
+          <ul class="navbar-nav mx-auto  my-auto">
+         
+              <li class="nav-item indexTop ">
+                <a class="nav-link" href="index.html">首頁</a>
+              </li>
+            
+              <li class="nav-item indexTop">
+                <a class="nav-link" href="furniture.html"> 產品</a>
+              </li>
+            <li class="nav-item indexTop">
+              <a class="nav-link" href="#">居家生活節</a>
+            </li>
+            <li class="nav-item indexTop">
+              <a class="nav-link" href="contact.html">門市位置</a>
+            </li>
+           
+          </ul>
+        
+          <form class="header-search mt-1 justify-content-center  my-auto">
+        
+           <a href="#"><i class="fas fa-user"></i></a>
+           <a href="#"><i class="fas fa-shopping-bag"></i></a> 
+           <a href="#"> <i class="fa fa-search"></i></a>
+           
+        </form>
+        
+        </div>
+      </nav>
+  
+      <div class="container fluid ">
+      <div class="row mb-50  justify-content-center pb-3">
+              
+                <div  class="line-style pb150" >
+                    <div class="  rec-title txt-color  text-center mt150">瑪黑家居</div>
+            
+            </div>
+         </div>
+        <div class="rec-slogan">
+            <h3 class="mb-50">“Decorate your life, Happy life.”<br>
+                裝飾你的家居生活，日常的生活才能夠美好。</h3>
+                <img  class="w-100 mb-50"src="images/shopbanner.jpg" alt="">
+        </div>
+      <div class="row shop-style   g-0" >
+      
+          <div class="col-md-6 col-sm-12  "> 
+             <div class="shopwrap">
+                  <div class="address">
+                    <a href="https://www.google.com/maps?q=%E5%8F%B0%E5%8C%97%E5%B8%82%E6%9D%BE%E5%B1%B1%E5%8D%80%E6%95%A6%E5%8C%96%E5%8D%97%E8%B7%AF%E4%B8%80%E6%AE%B557-1%E8%99%9F&um=1&ie=UTF-8&sa=X&sqi=2&ved=2ahUKEwjiu5Crpp7yAhVtQjABHb-wBeYQ_AUoAXoECAEQAw">前往goole地圖</a>
+                  </div>
+                      <div class="shop-img">
+                      <img  class="w-100"src="images/shop1.jpg" alt="">
+                    </div>
+              </div>
+          </div>
+          <div class="col-md-6 col-sm-12   d-flex flex-column justify-content-center">
+            <h3 class="shop-title text-right about-style  txt-color pt-sm-5 pt-md-0 font-weight-bolder
+            ">台北敦南店</h3>   
+            <div class="shop-body ">
+             <p class="txt-color font-weight-bold text-right">透過生活情境陳列，為前來的人們描繪令人著迷、靈感啟發故事。
+                     </p>
+                    </div>
+             <div class="shop-txt ">
+                    <p class="txt-color font-weight-bold text-right ">電話:&nbsp02-2246-8366</p>
+                    <p class="txt-color font-weight-bold text-right ">地址:&nbsp台北市松山區敦化南路一段57-1號</p>
+                    <p class="txt-color font-weight-bold text-right ">營業時間：&nbsp週一 ~ 週日 9:00 - 21:00</p>
+            </div>
+          </div>
+        </div>  
+          <div class="row shop-style   g-0" >
+            <div class="col-md-6 col-sm-12  order-md-1 ">
+              <div class="shopwrap">
+                <div class="address">
+                  <a href="https://www.google.com/maps/place/10491%E5%8F%B0%E5%8C%97%E5%B8%82%E4%B8%AD%E5%B1%B1%E5%8D%80%E4%B8%AD%E5%B1%B1%E5%8C%97%E8%B7%AF%E4%BA%8C%E6%AE%B536%E5%B7%B718%E8%99%9F/@25.0541902,121.5193407,17z/data=!3m1!4b1!4m5!3m4!1s0x3442a969126710a7:0xa97396ce44581cc8!8m2!3d25.0541854!4d121.5215294">前往goole地圖</a>
+                </div>
+                    <div class="shop-img">
+                    <img  class="w-100"src="images/shop2.jpg" alt="">
+                  </div>
+            </div>
+        </div><div class="col-md-6 col-sm-12   d-flex flex-column justify-content-center">
+             <h3 class="shop-title text-left about-style  txt-color font-weight-bolder
+             ">台北中山店</h3>   
+             <div class="shop-body ">
+              <p class="txt-color font-weight-bold  ">
+                踱步到瑪黑實體展示店，也成了另一種直接感受好物件的選擇。
+        
+                </p>
+                     </div>
+              <div class="shop-txt mt-2">
+                     <p class="txt-color font-weight-bold text-left ">電話:&nbsp02-225239860</p>
+                     <p class="txt-color font-weight-bold text-left ">地址:&nbsp台北市中山區中山北路二段 36 巷 18 號</p>
+                     <p class="txt-color font-weight-bold text-left ">營業時間：&nbsp週一 ~ 週日 9:00 - 21:00</p>
+             </div>
+           </div>
+            </div>
+           <div class="row shop-style pb150 " >
+                <div class="col-md-6 col-sm-12  ">
+                  <div class="shopwrap">
+                    <div class="address">
+                      <a href="https://www.google.com/maps?q=%E5%8F%B0%E4%B8%AD%E5%B8%82%E5%8D%97%E5%B1%AF%E5%8D%80%E6%96%87%E5%BF%83%E5%8D%97%E8%B7%AF+289+%E8%99%9F&um=1&ie=UTF-8&sa=X&sqi=2&ved=2ahUKEwig87OjqZ7yAhVDSK0KHUtBD7wQ_AUoAXoECAEQAw">前往goole地圖</a>
+                    </div>
+                        <div class="shop-img">
+                        <img  class="w-100"src="images/shop3.jpg" alt="">
+                      </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12   d-flex flex-column justify-content-center">
+                    <h3 class="shop-title text-right about-style  txt-color font-weight-bolder
+                    ">台中文心秀泰店</h3>   
+                    <div class="shop-body ">
+                    <p class="txt-color font-weight-bold  text-right  ">用指尖感受產品的重量與溫度，領著它回家，如此美好就更完整。</p>
+                            </div>
+                    <div class="shop-txt ">
+                            <p class="txt-color font-weight-bold text-right ">電話:&nbsp04-2473-7088</p>
+                            <p class="txt-color font-weight-bold text-right ">地址:&nbsp台中市南屯區文心南路 289 號</p>
+                            <p class="txt-color font-weight-bold text-right ">營業時間：&nbsp週一 ~ 週日 9:00 - 21:00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-50  justify-content-center pb-3">
+              
+                <div  class="line-style" >
+                <div class="  res-title txt-color  text-center">瑪黑餐酒</div>
+            
+            </div>
+         </div>
+      
+
+
+         
+         <div class="res-banner  pb-60 "> 
+             <div class="res-txt  txt-color text-center ">
+                 <h3 class="mb-50">“Eat for life, not eat to live.”<br>
+                    日常的餐桌夠理想，日常的生活才能夠美好。</h3>
+                    
+                              <div class="cook-img  ">
+                             <img  class="w-100"  src="images/res2.png" alt="">
+                       </div>
+                
+                   <div class="shop-txt">
+                <p class="txt-color font-weight-bold text-center mt-3 ">電話:&nbsp02-2722-1987</p>
+                <p class="txt-color font-weight-bold text-center ">地址:&nbsp台北市松山區八德路三段8巷36號</p>
+                <p class="txt-color font-weight-bold text-center ">營業時間：&nbsp週一 ~ 週日 9:00 - 21:00</p></div>
+            <img  class="w-100 mt-5  "  src="images/res.png" alt="">
+           
+        </div>
+        </div>
+         </div>
+         <div class="container">
+           <div class="res ">
+                <img  class="w-100"  src="images/shop4.jpg" alt="">
+                 <a href="#">Menu</a>
+            </div>
+           
+      </div>
+      
+
+     
+     
+</div>
+<div class="footer-copyright text-center ">
+  <span class="text-white font-weight-bolder ">© 2018 storemarais.com</span>     
+ <div class="footer-icon text-center ">
+<i class="fab fa-facebook-square ml-2"></i>
+<i class="fab fa-instagram ml-2"></i>
+<i class="fab fa-twitter ml-2"></i>
+</div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+  </body>
