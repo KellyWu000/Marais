@@ -94,7 +94,7 @@ function writing(){
   for(let i=0;i<data.length;i++){
    setTimeout(()=>{
 dom.innerHTML+=data[i];
-   },100*i);
+   },80*i);
   }
   
 }
@@ -103,7 +103,7 @@ writing();
 window.onload=function(){
   setTimeout(()=>{
 typing()
-  },300)
+  },200)
  
 }
 
