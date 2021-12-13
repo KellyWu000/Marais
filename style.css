@@ -433,6 +433,32 @@ form .fas,
   background-color: #d1b8a2;
   padding: 8px;
   margin: 2px;
+  position: relative;
+  cursor: pointer;
+}
+.ad-txt {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(196, 180, 170, 0.596);
+  color: #8b4d29;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  opacity: 0;
+  transition: 1.3s;
+  transform: scale(0);
+}
+.ad-txt p {
+  font-size: 18px;
+  font-weight: 600;
+}
+.img-wrap:hover .ad-txt {
+  opacity: 1;
+  transform: scale(1);
 }
 .img-wrap img {
   width: 100%;
@@ -442,11 +468,11 @@ form .fas,
   border-radius: 3px;
 }
 
-.img-wrap:hover img {
+/* .img-wrap:hover img {
   cursor: pointer;
   transition: 1.3s;
   transform: scale(1.06);
-}
+} */
 
 /* icon */
 
